@@ -2,7 +2,6 @@ package com.skilldistillery.foodtruck.app;
 
 import com.skilldistillery.foodtruck.entities.FoodTruck;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class FoodTruckApp {
@@ -105,7 +104,7 @@ public class FoodTruckApp {
 		}
 				
 		if (numberOfTrucks > 0 ) {
-			double averageTruckRating = (double) truckRatings / fleet.length;
+			double averageTruckRating = (double) truckRatings / numberOfTrucks;
 			System.out.println("Average truck rating: " + averageTruckRating);
 		} else {
 			System.out.println("There are no trucks in the system!");
